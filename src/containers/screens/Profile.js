@@ -10,7 +10,7 @@ import { connect } from "react-redux";
 import { authActions } from "../../redux/actions";
 
 class Profile extends Component {
-  componentWillMount(){
+  componentDidMount(){
     this.props.profileGet(profileGet, this.props.jwt);
   };
 
