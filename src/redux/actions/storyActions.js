@@ -1,10 +1,12 @@
 import * as actionKeys from '../actionKeys';
 
 export const storyChange = storyEdit => {
+  debugger;
   return {type: actionKeys.storyActionKeys.STORY_CHANGE, storyEdit};
 };
 
 export const storiesGet = (apiCall, filter) => {
+  debugger;
   return {type: actionKeys.storyActionKeys.STORIES_GET_REQUEST, apiCall, filter};
 };
 

@@ -4,6 +4,7 @@ import {watchStoriesGetRequest, watchStoryUpsertRequest} from './storiesSaga';
 import {watchProfileGetRequest} from './authSaga';
 
 export default function* root() {
+  debugger;
   yield all([
     fork(watchStoriesGetRequest),
     fork(watchStoryUpsertRequest),

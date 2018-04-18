@@ -15,10 +15,12 @@ const init = {
 export default (state = init, action) => {
   switch (action.type) {
     case actionKeys.storyActionKeys.STORY_CHANGE:
+      debugger;
       return {...state, storyEdit: action.storyEdit};
     case actionKeys.storyActionKeys.STORIES_GET_REQUEST:
       return { ...state, storiesLoading : true};
     case actionKeys.storyActionKeys.STORIES_GET_SUCCESS:
+      debugger;
       return { ...state, stories: action.stories, storiesLoading: false};
     case actionKeys.storyActionKeys.STORIES_GET_FAILURE:
       //TODO add toast notifications

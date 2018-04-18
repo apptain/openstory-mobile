@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
 
 class StoriesList extends Component {
   componentDidMount(){
+    debugger;
 		this.props.getStoriesList(storiesGet, this.props.filter);
   };
 
@@ -76,6 +77,7 @@ var mapStateToProps = function (state) {
 var mapDispatchToProps = function (dispatch) {
   return {
     getStoriesList(apiCall, filter) {
+      debugger;
       dispatch(storyActions.storiesGet(apiCall, filter));
     },
     storySelect(story) {

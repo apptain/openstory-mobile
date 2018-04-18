@@ -31,6 +31,8 @@ const rootReducer = combineReducers({
   story: persistReducer(storyPersistConfig, storyReducer)
 });
 
+debugger;
+
 export default function configureStore(onCompletion: () => void): any {
   const sagaMiddleware = createSagaMiddleware();
 

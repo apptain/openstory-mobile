@@ -4,7 +4,9 @@ import * as actionKeys from '../actionKeys';
 import {objectToArray} from "../utils";
 
 function* storiesGetFetch(apiCall, filter) {
+  debugger;
   const {response, error} = yield call(apiCall, filter);
+  debugger;
   if(response) {
     const stories = objectToArray(response);
     yield put({ type: actionKeys.storyActionKeys.STORIES_GET_SUCCESS, stories})
@@ -15,7 +17,9 @@ function* storiesGetFetch(apiCall, filter) {
 
 export function* watchStoriesGetRequest() {
   while (true) {
+    debugger;
     const { apiCall, filter } = yield take(actionKeys.storyActionKeys.STORIES_GET_REQUEST);
+    debugger;
     yield fork(storiesGetFetch, apiCall, filter);
   }
 }
