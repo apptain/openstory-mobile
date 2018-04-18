@@ -1,5 +1,8 @@
 # OPENSTORY MOBILE  #
 
+Screencast demo available at:
+https://www.youtube.com/watch?v=ACtohjdJj2w
+
 ### TO RUN  ###
 
 * npm i
@@ -9,5 +12,4 @@
 
 ### TODOS ###
 
-* screencast demo
 * write docs, better readme, and todos
