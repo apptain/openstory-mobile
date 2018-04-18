@@ -8,8 +8,14 @@ https://www.youtube.com/watch?v=ACtohjdJj2w
 * npm i
 * react-native link
 * npm start
-* another terminal react-native run-ios or react-native run-android (android not as tested yet)
+* another terminal react-native run-ios (android broken)
 
 ### TODOS ###
 
-* write docs, better readme, and todos
+* package redux code and add tests
+* get android working
+* broken stuff TODOs in code
+* deployments 
+* loading dialogs 
+* toasts
+* react performance testing and optimizations
