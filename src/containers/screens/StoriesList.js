@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 });
 
 class StoriesList extends Component {
-  componentWillMount(){
+  componentDidMount(){
 		this.props.getStoriesList(storiesGet, this.props.filter);
   };
 
