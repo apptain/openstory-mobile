@@ -15,7 +15,6 @@ class Profile extends Component {
   };
 
   render() {
-    debugger;
     const user = this.props.user;
     if(user){
       return (

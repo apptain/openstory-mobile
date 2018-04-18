@@ -21,9 +21,7 @@ export function* watchStoriesGetRequest() {
 }
 
 function* storyUpsertFetch(apiCall, story, token) {
-  debugger;
   const {response, error} = yield call(apiCall, story, token);
-  debugger;
   if(response) {
     const story = response;
     yield put({ type: actionKeys.storyActionKeys.STORY_UPSERT_SUCCESS, story})

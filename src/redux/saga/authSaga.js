@@ -4,9 +4,7 @@ import * as actionKeys from '../actionKeys';
 import {objectToArray} from "../utils";
 
 function* profileGetFetch(apiCall, jwt) {
-  debugger;
   const {response, error} = yield call(apiCall, jwt);
-  debugger;
   if(response) {
     const me = response;
     //TODO somewhere better for this transform to live?
