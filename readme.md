@@ -15,6 +15,7 @@ https://www.youtube.com/watch?v=ACtohjdJj2w
 * package redux code and add tests
 * get android working
 * broken stuff TODOs in code
+* eslint and clean up code inconsistencies
 * deployments 
 * loading dialogs 
 * toasts
